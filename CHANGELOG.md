@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Updated dependency function-agent-java to 1.3.0
 - Updated idlab-functions-java to 1.4.0
+- Publish to Maven Central using central-publishing-maven-plugin
 
 ## [8.0.1] - 2025-12-11
 
