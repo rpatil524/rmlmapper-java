@@ -3,7 +3,7 @@
     <groupId>be.ugent.rml</groupId>
     <artifactId>rmlmapper</artifactId>
     <name>RMLMapper</name>
-    <version>8.0.1</version>
+    <version>8.1.0-SNAPSHOT</version>
     <description>
         The RMLMapper executes RML rules to generate high quality Linked Data from multiple originally (semi-)structured data sources.
     </description>
@@ -36,8 +36,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.0</junit.version> <!-- testcontainers can't handle > 5.8 yet -->
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <jena.version>5.2.0</jena.version>
         <jelly.version>3.2.0</jelly.version>
         <testcontainers.version>2.0.2</testcontainers.version>
@@ -284,7 +284,7 @@
         <dependency>
             <groupId>be.ugent.idlab.knows</groupId>
             <artifactId>function-agent-java</artifactId>
-            <version>1.2.1</version>
+            <version>1.3.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.jena</groupId>
@@ -310,7 +310,7 @@
         <dependency>
             <groupId>be.ugent.idlab.knows</groupId>
             <artifactId>idlab-functions-java</artifactId>
-            <version>1.3.3</version>
+            <version>1.4.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.commons</groupId>

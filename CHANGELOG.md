@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+### Added
+- `crossConcat` and `crossConcatSequence` functions (by updating dependency to idlab-functions-java)
+
+### Changed
+- Requires Java version >= 21
+
+### Fixed
+- Updated dependency function-agent-java to 1.3.0
+- Updated idlab-functions-java to 1.4.0
+
 ## [8.0.1] - 2025-12-11
 
 ### Fixed

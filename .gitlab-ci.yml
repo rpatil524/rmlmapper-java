@@ -10,10 +10,10 @@ include:
   - project: 'rml/util/ci-templates'
     ref: main
     file: 'CHANGELOG.gitlab-ci.yml'
-  # Push a Docker Image to Docker Hub on new tags
-  - project: 'rml/util/ci-templates'
-    ref: main
-    file: 'Docker-Hub.gitlab-ci.yml'
+#  # Push a Docker Image to Docker Hub on new tags
+#  - project: 'rml/util/ci-templates'
+#    ref: main
+#    file: 'Docker-Hub.gitlab-ci.yml'
   # Push a build to Maven Central on new tags
   - project: 'rml/util/ci-templates'
     ref: main
@@ -52,7 +52,7 @@ default:
 General:
   stage: unittests
   image:
-    name: maven:3-eclipse-temurin-17
+    name: maven:3-eclipse-temurin-21
     pull_policy: if-not-present
   services:
     - name: docker:29-dind
@@ -73,7 +73,7 @@ General:
       - '$TEST.log'
   parallel:
     matrix:
-      - TEST: [ArgumentsTest, MapperCSVTest, MapperJSONTest, MapperMySQLTest, MapperPostgresR2RMLTest, MapperWoTTest, ArgumentsTestMySQLTest, MapperCSVWTest, MapperLDESTest, MapperODSTest, MapperOracleDBTest, MapperPostgresXMLTest, MapperXMLTest, CustomRMLFnOMapperCSVTest, MapperEXCELTest, MapperMappingFileURLTest, MapperSPARQLTest, MetadataTest, CustomRMLFnOMapperJSONTest, CustomRMLFnOMapperTest, MapperHTMLTest, MapperMySQLR2RMLTest, MapperPostgresCSVTest, MapperSQLServerTest, OptimizationsTest, R2RMLConverterTest, QuadTest, ReadmeTest, ReadmeFunctionTest, ConformerDetectionTest, MapperNewRMLCoreJSONTest, MapperNewRMLIOSourceTest, MapperNewRMLIOTargetTest, HttpRequestTargetTest]
+      - TEST: [ArgumentsTest, MapperCSVTest, MapperJSONTest, MapperMySQLTest, MapperPostgresR2RMLTest, MapperWoTTest, ArgumentsTestMySQLTest, MapperCSVWTest, MapperLDESTest, MapperODSTest, MapperOracleDBTest, MapperPostgresXMLTest, MapperXMLTest, CustomRMLFnOMapperCSVTest, MapperEXCELTest, MapperMappingFileURLTest, MapperSPARQLTest, MetadataTest, CustomRMLFnOMapperJSONTest, CustomRMLFnOMapperTest, MapperHTMLTest, MapperMySQLR2RMLTest, MapperPostgresCSVTest, MapperSQLServerTest, OptimizationsTest, R2RMLConverterTest, QuadTest, ReadmeTest, ReadmeFunctionTest, ConformerDetectionTest, MapperNewRMLCoreJSONTest, MapperNewRMLIOSourceTest, MapperNewRMLIOTargetTest, HttpRequestTargetTest, MapperCrossConcatSequenceTest]
   except:
     - master
     - development
