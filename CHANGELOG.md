@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## [8.1.0] - 2025-12-23
+
 ### Added
 - `crossConcat` and `crossConcatSequence` functions (by updating dependency to idlab-functions-java)
 
@@ -844,6 +846,7 @@ and [169](https://gitlab.ilabt.imec.be/rml/proc/rmlmapper-java/-/issues/169))
 - support for accessing remote files (via HTTP GET)
 - basic support for functions
 
+[8.1.0]: https://github.com/RMLio/rmlmapper-java/compare/v8.0.1...v8.1.0
 [8.0.1]: https://github.com/RMLio/rmlmapper-java/compare/v8.0.0...v8.0.1
 [8.0.0]: https://github.com/RMLio/rmlmapper-java/compare/v7.3.3...v8.0.0
 [7.3.3]: https://github.com/RMLio/rmlmapper-java/compare/v7.3.2...v7.3.3
